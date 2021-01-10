@@ -5,11 +5,244 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GIT</title>
+    <style>
+        #container {
+            border: 16px solid grey;
+            background: url('../img/bg.jpg') no-repeat center center/cover;
+        }
+
+        #navbar {
+            display: flex;
+            align-items: center;
+            position: sticky;
+            top: 0px;
+            border-bottom: 2px solid white;
+            border-radius: 15px;
+        }
+
+        #navbar::before {
+            content: "";
+            background-color: black;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.7;
+        }
+
+
+        #navbar ul {
+            display: flex;
+            font-family: 'Baloo Bhai', cursive;
+        }
+
+        #navbar ul li {
+            list-style: none;
+            font-size: 1.3rem;
+        }
+
+        #navbar ul li a {
+            color: white;
+            display: block;
+            padding: 3px 22px;
+            text-decoration: none;
+        }
+
+        #navbar ul li a:hover,
+        #navbar ul li a:active {
+            color: black;
+            background-color: white;
+        }
+
+
+
+        #home-section h1 {
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            color: white;
+            font-family: "roboto";
+        }
+
+        #data {
+            height: 240px;
+            justify-content: center;
+            display: flex;
+            border-top: 2px solid white;
+            border-radius: 15px;
+
+        }
+
+        #data img {
+            padding: 29px 65px;
+            height: 170px;
+        }
+
+        .info {
+            color: white;
+            display: flex;
+            font-size: 40px;
+            justify-content: center;
+            padding: 46px;
+            flex-direction: column;
+            font-family: "roboto";
+        }
+
+        .info a {
+            font-size: 17px;
+            cursor: pointer;
+            font-family: "roboto";
+            text-decoration: none;
+        }
+
+        .info a:hover {
+            color: grey;
+        }
+
+        .info p {
+            font-size: 14px;
+            font-family: "roboto";
+        }
+
+        #about-section {
+            height: 175px;
+            border-top: 2px solid white;
+            border-radius: 15px;
+
+        }
+
+        .about {
+            font-size: 16px;
+            color: white;
+        }
+
+        .about h2 {
+            justify-content: center;
+            display: flex;
+
+        }
+
+        .about p {
+            padding: 6px 39px;
+            font-family: "roboto";
+        }
+
+        #qualification-section {
+            height: 175px;
+            border-top: 2px solid white;
+            border-radius: 15px;
+
+        }
+
+        .qualification {
+            font-size: 16px;
+            color: white;
+        }
+
+        .qualification h2 {
+            justify-content: center;
+            display: flex;
+
+        }
+
+        .qualification p {
+            padding: 6px 39px;
+            font-family: "roboto";
+        }
+
+        #skill-section {
+            height: 175px;
+            border-top: 2px solid white;
+            border-radius: 15px;
+
+        }
+
+        .skills {
+            font-size: 16px;
+            color: white;
+        }
+
+        .skills h2 {
+            justify-content: center;
+            display: flex;
+
+        }
+
+        .skills p {
+            padding: 6px 39px;
+            font-family: "roboto";
+        }
+
+        footer {
+            background: black;
+            color: white;
+            padding: 9px 20px;
+            justify-content: center;
+            display: flex;
+        }
+    </style>
 </head>
 
 <body>
-    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut vitae eaque dicta laborum qui vel, dignissimos pariatur
-    nisi, odit doloremque quam quaerat quasi.
+    <div id="container">
+        <nav id="navbar">
+            <ul>
+                <li class="item"><a href="#home-section">Home</a></li>
+                <li class="item"><a href="#about-section">About Me</a></li>
+                <li class="item"><a href="#qualification-section">Qualifications</a></li>
+            </ul>
+        </nav>
+
+        <section id="home-section">
+            <h1> PORTFOLIO </h1>
+            <div id="data">
+                <img src="img/pic.jpg">
+                <div class="info">
+                    Shivansh Bhardwaj
+                    <a href="">shivansh06ashu@gmail.com</a>
+                    <p>9990028880</p>
+                </div>
+            </div>
+        </section>
+        <section id="about-section">
+            <div class="about">
+                <h2>About Me</h2>
+                <p> I am Pursuing my Btech-CSE(CC) from Manav Rachna International Institute of Research And Studies.I
+                    am currently in 2nd year and I scored 84% in my previous 3rd semester.I have a zest to learn new
+                    things,i am capable to handle any situation,i have a leadership quality and more.
+                </p>
+            </div>
+        </section>
+
+        <section id="qualification-section">
+            <div class="qualification">
+                <h2>Qualifications</h2>
+                <ul>
+                    <li>Scored 85% in 10th class</li>
+                    <li>Scored 88% in 12th class</li>
+                    <li>Won Gold Medal in Football Tournament at State Level</li>
+                    <li>Got Second Position in Interscchool Quiz Competition</li>
+                </ul>
+            </div>
+        </section>
+        <section id="skill-section">
+            <div class="skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li>MERN Stack Developer</li>
+                    <li>Web Developer</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div class="center">
+            Copyright &copy; MyPortfolio All rights reserved!
+        </div>
+    </footer>
+
 </body>
 
 </html>
