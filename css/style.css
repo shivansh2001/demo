@@ -39,6 +39,7 @@
     padding: 3px 22px;
     border-radius: 20px;
     text-decoration: none;
+    transition: 15px;
 }
 
 #navbar ul li a:hover,
@@ -77,13 +78,13 @@
     justify-content: center;
     padding: 46px;
     flex-direction: column;
-    font-family: "roboto";
+   
 }
 
 .info a{
     font-size: 17px;
     cursor: pointer;
-    font-family: "roboto";
+   
     text-decoration: none;
 }
 .info a:hover{
@@ -92,7 +93,7 @@
 
 .info p{
     font-size: 14px;
-    font-family: "roboto";
+    
 }
 #about-section{
     height: 175px;
@@ -109,11 +110,12 @@
     justify-content: center;
     display: flex;
     
+    
 }
 
 .about p{
     padding: 6px 39px;
-    font-family: "roboto";
+   
 }
 
 #qualification-section{
@@ -135,7 +137,7 @@
 
 .qualification p{
     padding: 6px 39px;
-    font-family: "roboto";
+    
 }
 
 #skill-section{
@@ -157,13 +159,13 @@
 
 .skills p{
     padding: 6px 39px;
-    font-family: "roboto";
+ 
 }
 
 footer{
     background: black;
     color: white;
-    padding: 9px 20px;
+    padding: 9px 14px;
     justify-content: center;
     display: flex;
 }
