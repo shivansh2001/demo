@@ -1,39 +1,41 @@
-#container{
+#container {
     border: 16px solid grey;
     background: url('../img/bg.jpg') no-repeat center center/cover;
+    font-family: 'Baloo Bhai', cursive;
 }
 
-#navbar{
+#navbar {
     display: flex;
     align-items: center;
     position: sticky;
     top: 0px;
+    border-bottom: 4px solid white;
 }
 
-#navbar::before{
+#navbar::before {
     content: "";
     background-color: black;
     position: absolute;
-    top:0px;
-    left:0px;
+    top: 0px;
+    left: 0px;
     height: 100%;
-    width:100%;
+    width: 100%;
     z-index: -1;
     opacity: 0.7;
 }
 
 
-#navbar ul{
+#navbar ul {
     display: flex;
     font-family: 'Baloo Bhai', cursive;
 }
 
-#navbar ul li{ 
+#navbar ul li {
     list-style: none;
     font-size: 1.3rem;
 }
 
-#navbar ul li a{
+#navbar ul li a {
     color: white;
     display: block;
     padding: 3px 22px;
@@ -43,126 +45,149 @@
 }
 
 #navbar ul li a:hover,
-#navbar ul li a:active{
+#navbar ul li a:active {
     color: black;
     background-color: white;
 }
 
 
 
-#home-section h1{
+#home-section h1 {
     justify-content: center;
     align-items: center;
     display: flex;
     color: white;
-    font-family: "roboto";
+   
 }
 
-#data{
+#data {
     height: 240px;
     justify-content: center;
     display: flex;
-    border-top: 2px solid white;
-  
+    border-top: 4px solid white;
+    border-radius: 25px;
+
 }
 
-#data img{
+#data img {
     padding: 29px 65px;
     height: 170px;
 }
 
-.info{
+.info {
     color: white;
     display: flex;
     font-size: 40px;
     justify-content: center;
     padding: 46px;
     flex-direction: column;
-   
+
 }
 
-.info a{
+.info a {
     font-size: 17px;
     cursor: pointer;
-   
+
     text-decoration: none;
 }
-.info a:hover{
-   color: grey;
+
+.info a:hover {
+    color: grey;
 }
 
-.info p{
+.info p {
     font-size: 14px;
-    
+
 }
-#about-section{
+
+#about-section {
     height: 175px;
-    border-top: 2px solid white;
+    border-top: 4px solid white;
+    border-radius: 25px;
 
 }
 
-.about{
+.about {
     font-size: 16px;
     color: white;
 }
 
-.about h2{
+.about h2 {
     justify-content: center;
     display: flex;
-    
-    
+
+
 }
 
-.about p{
+.about p {
     padding: 6px 39px;
-   
+    transition: all 0.5s ease-out;
+
 }
 
-#qualification-section{
+.about p:hover{
+    transform: translate(12px, 12px);
+}
+
+#qualification-section {
     height: 175px;
-    border-top: 2px solid white;
+    border-top: 4px solid white;
+    border-radius: 25px;
 
 }
 
-.qualification{
+.qualification {
     font-size: 16px;
     color: white;
 }
 
-.qualification h2{
+.qualification h2 {
     justify-content: center;
     display: flex;
-    
+
 }
 
-.qualification p{
+.qualification ul li{
     padding: 6px 39px;
-    
+    transition: all 0.5s ease-out;
+
 }
 
-#skill-section{
+.qualification ul li:hover{
+    transform: translate(12px, 12px);
+}
+
+
+#skill-section {
     height: 175px;
-    border-top: 2px solid white;
+    border-top: 4px solid white;
+    border-radius: 25px;
 
 }
 
-.skills{
+.skills {
     font-size: 16px;
     color: white;
 }
 
-.skills h2{
+.skills h2 {
     justify-content: center;
     display: flex;
-    
+
 }
 
-.skills p{
+.skills ul li{
     padding: 6px 39px;
- 
+    transition: all 0.5s ease-out;
+
 }
 
-footer{
+.skills ul li:hover{
+    transform: translate(12px, 12px);
+}
+
+
+footer {
     background: black;
     color: white;
     padding: 9px 14px;
