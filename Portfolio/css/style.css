@@ -168,7 +168,6 @@ html{
 .qualification ul:hover{
     color: white;
     background-color: black;
-    /* border: 6px solid white; */
     border-radius: 40px;
     opacity: 0.7;
 }
